@@ -448,10 +448,6 @@ h1 strong{display:block;background:linear-gradient(90deg,#fff 5%,#44bfff 72%,#19
   }
 }
 
-  }
-}
-
-
 /* V12 — Alinhamento do cartão com o dashboard */
 
 @media (min-width: 901px) {
@@ -467,6 +463,5 @@ h1 strong{display:block;background:linear-gradient(90deg,#fff 5%,#44bfff 72%,#19
     right: 0 !important;
     bottom: -24px !important;
     transform: translateX(-24px) !important;
-}
 }
 }
