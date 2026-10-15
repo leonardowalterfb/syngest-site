@@ -459,17 +459,14 @@ h1 strong{display:block;background:linear-gradient(90deg,#fff 5%,#44bfff 72%,#19
     position: relative !important;
     padding-bottom: 0;
   }
-
   .hero-visual .dashboard-frame {
     width: 100%;
   }
-
-  .hero-visual .floating-card {
+  
+.hero-visual .floating-card {
     right: 0 !important;
     bottom: -24px !important;
-    transform: none !important;
-  }
+    transform: translateX(-24px) !important;
 }
-
 }
-
+}
