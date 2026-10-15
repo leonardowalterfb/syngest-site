@@ -293,13 +293,14 @@ h1 strong{display:block;background:linear-gradient(90deg,#fff 5%,#44bfff 72%,#19
     width:min(1240px, calc(100% - 72px));
     margin:0 auto;
   }
-  .hero-grid{
+
+.hero-grid{
     display:grid !important;
-    grid-template-columns:minmax(0, 1.02fr) minmax(440px, .98fr) !important;
+    grid-template-columns:minmax(0, 1.08fr) minmax(440px, .92fr) !important;
     align-items:center;
-    gap:54px !important;
+    gap:38px !important;
     width:100%;
-  }
+}
   .hero-copy{
     width:auto !important;
     max-width:640px !important;
