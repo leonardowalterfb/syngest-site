@@ -349,42 +349,103 @@ h1 strong{display:block;background:linear-gradient(90deg,#fff 5%,#44bfff 72%,#19
   }
 }
 
+/* V11 — Refinamento do cabeçalho desktop */
 
-/* V11 — Ajuste dos botões comerciais do cabeçalho */
+@media (min-width: 901px) {
+  .header {
+    background: rgba(5, 10, 18, 0.92);
+    border-bottom: 1px solid rgba(100, 170, 255, 0.12);
+  }
 
-.header-actions {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  flex-shrink: 0;
-}
-
-@media (min-width: 901px) and (max-width: 1150px) {
   .nav {
-    gap: 16px;
+    gap: 24px;
+    height: 82px;
   }
 
-  .desktop-nav {
-    gap: 14px;
-    font-size: 13px;
-  }
-
-  .header-actions {
-    gap: 8px;
-  }
-
-  .header-actions .btn {
-    padding: 10px 12px;
-    font-size: 12px;
+  .header .brand {
+    flex-shrink: 0;
   }
 
   .header .brand img {
-    width: 170px;
+    width: 205px;
+    max-height: 54px;
+    object-fit: contain;
+  }
+
+  .desktop-nav {
+    flex: 1;
+    justify-content: center;
+    gap: 20px;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  .desktop-nav a {
+    position: relative;
+    transition: color 0.2s ease;
+  }
+
+  .desktop-nav a:hover {
+    color: #ffffff;
+  }
+
+  .header-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+  }
+
+  .header-actions .btn {
+    min-height: 42px;
+    padding: 11px 15px;
+    font-size: 12px;
+    border-radius: 10px;
+  }
+
+  .header-actions .btn-outline {
+    border-color: rgba(69, 157, 255, 0.55);
+    background: rgba(20, 91, 160, 0.08);
+  }
+
+  .header-actions .btn-outline:hover {
+    background: rgba(31, 116, 255, 0.14);
+    border-color: #3e9bff;
   }
 }
 
+/* Ajuste para desktops com largura intermediária */
+@media (min-width: 901px) and (max-width: 1150px) {
+  .nav {
+    gap: 14px;
+  }
+
+  .header .brand img {
+    width: 165px;
+  }
+
+  .desktop-nav {
+    gap: 12px;
+    font-size: 12px;
+  }
+
+  .header-actions {
+    gap: 7px;
+  }
+
+  .header-actions .btn {
+    padding: 10px 11px;
+    font-size: 11px;
+  }
+}
+
+/* Comportamento atual para telas menores — não estamos
+   fazendo a otimização mobile nesta etapa */
 @media (max-width: 900px) {
   .header-actions {
     display: none;
+  }
+}
+
   }
 }
