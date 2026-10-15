@@ -308,8 +308,8 @@ h1 strong{display:block;background:linear-gradient(90deg,#fff 5%,#44bfff 72%,#19
   .hero-copy h1{
     width:auto !important;
     max-width:620px !important;
-    font-size:clamp(54px, 5vw, 72px) !important;
-    line-height:1.00 !important;
+    font-size:clamp(48px, 4.4vw, 64px) !important;
+    line-height:1.04 !important;
     letter-spacing:-.045em !important;
   }
   .hero-visual{
