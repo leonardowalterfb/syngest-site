@@ -450,3 +450,18 @@ h1 strong{display:block;background:linear-gradient(90deg,#fff 5%,#44bfff 72%,#19
 
   }
 }
+
+/* V12 — Ajustes finais do Hero desktop */
+
+@media (min-width: 901px) {
+  .hero-copy h1 {
+    line-height: 1.08 !important;
+    padding-bottom: 0.04em;
+  }
+
+ .hero-visual .floating-card {
+    right: 0;
+    bottom: -24px;
+}
+}
+
