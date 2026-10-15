@@ -49,7 +49,6 @@ h1 strong{display:block;background:linear-gradient(90deg,#fff 5%,#44bfff 72%,#19
 
 /* SYNGEST V2 */
 .header .brand{display:flex;align-items:center;height:78px}
-.header .brand img{width:205px;max-height:54px;object-fit:contain;object-position:left center}
 .how-section{background:#f8fbff}
 .steps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
 .step{position:relative;background:#fff;border:1px solid #e4edf7;border-radius:22px;padding:28px;min-height:260px;overflow:hidden;transition:.25s}
@@ -61,41 +60,30 @@ h1 strong{display:block;background:linear-gradient(90deg,#fff 5%,#44bfff 72%,#19
 @media(max-width:900px){.steps-grid{grid-template-columns:repeat(2,1fr)}.header .brand img{width:175px}}
 @media(max-width:600px){.steps-grid{grid-template-columns:1fr}.header .brand img{width:150px;max-height:48px}}
 
-/* V3 — header logo refinement */
-.header .brand img{
-  width:190px;
-  max-height:46px;
-  object-fit:contain;
-  object-position:center;
-  display:block;
-}
-@media(max-width:900px){.header .brand img{width:165px;max-height:42px}}
-@media(max-width:600px){.header .brand img{width:145px;max-height:38px}}
 
-/* V4 — new transparent SYNGEST logo */
-.header .brand img{
-  width:205px;
-  max-height:52px;
-  height:auto;
-  object-fit:contain;
-  object-position:center;
-}
-@media(max-width:900px){.header .brand img{width:175px;max-height:46px}}
-@media(max-width:600px){.header .brand img{width:150px;max-height:40px}}
+/* Logo do cabeçalho — regra consolidada */
 
-/* V5 — header logo slightly larger */
-.header .brand img{
-  width:230px;
-  max-height:58px;
-  height:auto;
-  object-fit:contain;
-  object-position:center;
+.header .brand img {
+  width: 230px;
+  max-height: 58px;
+  height: auto;
+  object-fit: contain;
+  object-position: center;
+  display: block;
 }
-@media(max-width:900px){
-  .header .brand img{width:195px;max-height:50px}
+
+@media (max-width: 900px) {
+  .header .brand img {
+    width: 195px;
+    max-height: 50px;
+  }
 }
-@media(max-width:600px){
-  .header .brand img{width:165px;max-height:44px}
+
+@media (max-width: 600px) {
+  .header .brand img {
+    width: 165px;
+    max-height: 44px;
+  }
 }
 
 /* V6 — Ecosystem section redesign */
