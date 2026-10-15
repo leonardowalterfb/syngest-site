@@ -451,17 +451,25 @@ h1 strong{display:block;background:linear-gradient(90deg,#fff 5%,#44bfff 72%,#19
   }
 }
 
-/* V12 — Ajustes finais do Hero desktop */
+
+/* V12 — Alinhamento do cartão com o dashboard */
 
 @media (min-width: 901px) {
-  .hero-copy h1 {
-    line-height: 1.08 !important;
-    padding-bottom: 0.04em;
+  .hero-visual {
+    position: relative !important;
+    padding-bottom: 0;
   }
 
- .hero-visual .floating-card {
-    right: 0;
-    bottom: -24px;
+  .hero-visual .dashboard-frame {
+    width: 100%;
+  }
+
+  .hero-visual .floating-card {
+    right: 0 !important;
+    bottom: -24px !important;
+    transform: none !important;
+  }
 }
+
 }
 
