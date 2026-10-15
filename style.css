@@ -448,18 +448,23 @@ h1 strong{display:block;background:linear-gradient(90deg,#fff 5%,#44bfff 72%,#19
   }
 }
 
-
-/* V12 — Alinhamento do cartão abaixo do dashboard */
+/* V12 — Cartão alinhado ao dashboard */
 
 @media (min-width: 901px) {
-  .hero-visual {
-    position: relative !important;
+  .hero-visual .dashboard-wrap {
+    position: relative;
+    width: 100%;
   }
 
-  .hero-visual .floating-card {
+  .hero-visual .dashboard-wrap .dashboard-frame {
+    width: 100%;
+  }
+
+  .hero-visual .dashboard-wrap .floating-card {
     right: 0 !important;
-    bottom: -24px !important;
-    transform: none !important;
+    bottom: 0 !important;
+    transform: translateY(calc(100% + 24px)) !important;
   }
 }
+
 
